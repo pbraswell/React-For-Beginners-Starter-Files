@@ -4,4 +4,22 @@
   leave
   appear Must set transitionAppear={true} on animation component
 */
-
+.order-enter
+  transition all 0.5s
+  transform translateX(-120%)
+  max-height 0
+  padding !important
+  &.order-enter-active
+   max-height 60px
+   padding 2rem 0 !important
+   transform translateX(0)
+   
+.order-leave
+  transition all 0.5s
+  transform translateX(0)
+  max-hdight 60px
+  padding 2rem 0 !important
+  &.order-leave-active
+   transform translateX(120%)
+   max-hdight 0
+   padding !important
